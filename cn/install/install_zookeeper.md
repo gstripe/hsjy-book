@@ -1,1 +1,1 @@
-# zookeeper集群
+# zookeeper集群安装配置
