@@ -11,5 +11,11 @@ tar -zxvf jdk-7u80-linux-x64.tar.gz
 # change owner jdk1.7.0_80
 chown -R hsit.hsit jdk1.7.0_80
 
+# hsit
+cd ~
+vi .bash_profile
+# edit add
+export JAVA_HOME=/opt/jdk1.7.0_80
+export PATH=$JAVA_HOME/bin:$PATH
 
 ```
