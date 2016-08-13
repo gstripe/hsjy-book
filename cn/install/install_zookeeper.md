@@ -14,7 +14,8 @@ zk 部署在
 
 su - hsit -c '/opt/zookeeper-3.4.8/bin/zkServer.sh start'
 
-zoo.cfg
+配置conf下的zoo.cfg文件
+然后分别复制到三个节点中去
 ```
 # The number of milliseconds of each tick
 tickTime=2000
