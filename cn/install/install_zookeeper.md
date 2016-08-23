@@ -8,6 +8,8 @@ zk 部署在
 
 192.168.2.73 s3.demo.jy.hsit
 
+![](/cn/install/images/zookeeper_01.png)
+
 安装目录/opt/zookeeper-3.4.8
 
 设置开机启动
