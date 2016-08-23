@@ -10,3 +10,4 @@
 
 ![](/cn/install/images/activemq_shared_file_system_master_slave.png)
 
+# 集群配置
