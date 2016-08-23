@@ -33,7 +33,7 @@ cd apache-activemq-5.14.0
 
 ```
 
-## 共享文件系统方式配置
+## Shared File System Master Slave 共享文件系统主从配置方法
 
 > 现阶段使用主从两台机子进行业务，业务量大后再做拆分。
 
