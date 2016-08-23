@@ -57,8 +57,9 @@ mount -o username=share,password=share //192.168.2.70/share amq
 ll amq
 
 # 然后在 activemq的data下创建一个软链接链接到这个amq挂载点
+ln -s /root/amq/kahadb /opt/activemq-5.14.0/data/kahadb_remote
 
-
+# 注意 /root/amq/kahadb 路径仅供参考
 
 ```
 
