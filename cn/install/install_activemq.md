@@ -81,3 +81,11 @@ vi activemq.xml
 
 ```
 
+## 配置开机启动项
+
+```
+su root
+
+
+
+```
