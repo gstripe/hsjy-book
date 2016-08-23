@@ -86,6 +86,6 @@ vi activemq.xml
 ```
 su root
 
-
+su - hsit -c '/opt/activemq-5.14.0/bin/activemq start'
 
 ```
