@@ -59,13 +59,20 @@ ll amq
 # 然后在 activemq的data下创建一个软链接链接到这个amq挂载点
 ln -s /root/amq/kahadb /opt/activemq-5.14.0/data/kahadb_remote
 
-# 注意 /root/amq/kahadb 路径仅供参考
+# 注意 /root/amq/kahadb 路径仅供参考，视具体情况而定。
 
 ```
 
+两台机子都配置完毕之后
+
 ```
-# 进入s6机子
+# 进入s6与s7机子（主-从）
 cd conf
 
 vi activemq.xml
+
+# 找到 <persistenceAdapter> 标签
+# 修改 <kahaDB directory="${activemq.data}/kahadb"/>
+# 为 <kahaDB directory="${activemq.data}/kahadb_remote"/>
+
 ```
