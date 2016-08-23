@@ -4,7 +4,7 @@
 
 ![](/cn/install/images/activemq_network_or_broker.png)
 
-## 共享文件方式（Mater-Slave)
+## 共享文件方式(Mater-Slave)
 
 > 当然需要要使用分布式文件系统，这里DFS目前只用了共享文件系统来代替
 
