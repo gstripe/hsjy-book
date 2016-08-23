@@ -75,4 +75,6 @@ vi activemq.xml
 # 修改 <kahaDB directory="${activemq.data}/kahadb"/>
 # 为 <kahaDB directory="${activemq.data}/kahadb_remote"/>
 
+# 可以的话 在 <broke 的brokerName属性定义一个名字方便识别
+
 ```
