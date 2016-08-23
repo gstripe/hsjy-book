@@ -43,6 +43,24 @@ cd apache-activemq-5.14.0
 需要一个可靠的DSF，这里偷懒暂使用Linux Samba建立了一个共享目录进行测试。
 共享目录为 \\192.168.2.70\share
 **
+挂载文件系统
+```
+# 在root用户下
+
+# 创建一个目录用来做挂载点
+mkdir amq
+
+# 将2.70的share目录挂载到amq下
+mount -o username=share,password=share //192.168.2.70/share amq 
+
+# 挂载完毕后可以看到远程目录的内容
+ll amq
+
+# 然后在 activemq的data下创建一个软链接链接到这个amq挂载点
+
+
+
+```
 
 ```
 # 进入s6机子
