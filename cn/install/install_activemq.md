@@ -77,4 +77,7 @@ vi activemq.xml
 
 # 可以的话 在 <broke 的brokerName属性定义一个名字方便识别
 
+:wq #保存
+
 ```
+
