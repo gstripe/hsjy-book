@@ -39,3 +39,14 @@ cd apache-activemq-5.14.0
 
 > 未来可能需要考虑负载均衡等。
 
+**
+需要一个可靠的DSF，这里偷懒暂使用Linux Samba建立了一个共享目录进行测试。
+共享目录为 \\192.168.2.70\share
+**
+
+```
+# 进入s6机子
+cd conf
+
+vi activemq.xml
+```
