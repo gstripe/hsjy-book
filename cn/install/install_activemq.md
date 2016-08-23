@@ -1,4 +1,4 @@
-# ActiveMQ 集群
+# ActiveMQ 集群说明
 
 ## 带HUB的拓扑结构
 
