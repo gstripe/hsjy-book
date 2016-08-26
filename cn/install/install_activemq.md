@@ -105,3 +105,5 @@ Broker1 连接 Broker2 不使用双向连接（Broker1 -&gt; Broker2）
 </networkConnectors>
 ```
 
+> conduitSubscriptions="false" 表示每个 Consumer 上都会收到所有的发送的消息
+
