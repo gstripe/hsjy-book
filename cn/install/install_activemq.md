@@ -4,7 +4,7 @@
 
 ![](/cn/install/images/activemq_network_or_broker.png)
 
-## 共享文件方式(Mater-Slave)
+## 共享文件方式\(Mater-Slave\)
 
 > 当然需要使用分布式文件系统，这里DFS目前只用了共享文件系统来代替
 
@@ -36,14 +36,15 @@ cd apache-activemq-5.14.0
 ## Shared File System Master Slave 共享文件系统主从配置方法
 
 > 现阶段使用主从两台机子进行业务，业务量大后再做拆分。
-
+> 
 > 未来可能需要考虑负载均衡等。
 
 **
 需要一个可靠的DSF，这里偷懒暂使用Linux Samba建立了一个共享目录进行测试。
-共享目录为 \\192.168.2.70\share
+共享目录为 \192.168.2.70\share
 **
 挂载文件系统
+
 ```
 # 在root用户下
 
@@ -91,9 +92,10 @@ su - hsit -c '/opt/activemq-5.14.0/bin/activemq start'
 ```
 
 ## forwarding bridge方式
-Broker1 连接 Broker2 不使用双向连接（Broker1 -> Broker2）
 
-```xml
+Broker1 连接 Broker2 不使用双向连接（Broker1 -&gt; Broker2）
+
+```js
 <networkConnectors>
   <networkConnector uri="static://(tcp://s7.demo.jy.hsit:61616)"
      name="s6.p-bridge-s7.c" duplex="false"
@@ -103,3 +105,4 @@ Broker1 连接 Broker2 不使用双向连接（Broker1 -> Broker2）
 </networkConnectors>
 
 ```
+
