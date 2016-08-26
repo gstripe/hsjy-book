@@ -89,3 +89,17 @@ su root
 su - hsit -c '/opt/activemq-5.14.0/bin/activemq start'
 
 ```
+
+## forwarding bridge方式
+Broker1 连接 Broker2 不使用双向连接（Broker1 -> Broker2）
+
+```xml
+<networkConnectors>
+  <networkConnector uri="static://(tcp://s7.demo.jy.hsit:61616)"
+     name="s6.p-bridge-s7.c" duplex="false"
+     conduitSubscriptions="false"
+     decreaseNetworkConsumerPriority="false">
+  </networkConnector>
+</networkConnectors>
+
+```
