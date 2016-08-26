@@ -95,6 +95,9 @@ su - hsit -c '/opt/activemq-5.14.0/bin/activemq start'
 
 Broker1 连接 Broker2 不使用双向连接（Broker1 -&gt; Broker2）
 
+> duplex="false" 表示仅使用单向通讯
+> conduitSubscriptions="false" 表示每个 Consumer 上都会收到所有的发送的消息，一个远程端上注册的多个消费者不会被视为一个消费者。
+
 ```
 <networkConnectors>
   <networkConnector uri="static://(tcp://s7.demo.jy.hsit:61616)"
@@ -105,5 +108,4 @@ Broker1 连接 Broker2 不使用双向连接（Broker1 -&gt; Broker2）
 </networkConnectors>
 ```
 
-> conduitSubscriptions="false" 表示每个 Consumer 上都会收到所有的发送的消息，一个远程端上注册的多个消费者不会被视为一个消费者。
 
