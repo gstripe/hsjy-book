@@ -111,3 +111,20 @@ Broker1 连接 Broker2 不使用双向连接（Broker1 -&gt; Broker2）
 
 ## 开启远程监控
 
+在activemq.xml配置文件中的<broker 标签中增加 useJmx="true"，然后重启Borkder即可使用。（这里就不配置安全性相关的选项了）
+
+接着在windows控制台什么的打开jconsole（有配置好JDK环境了）
+
+然后可以看到如下界面：
+
+![](/cn/install/images/jconsole.png)
+主界面
+
+![](/cn/install/images/jconsole_remote.png)
+选择远程进程，输入ip地址，端口号。一切都是默认的。
+
+![](/cn/install/images/jconsole_remote_insecure.png)
+点击连接按钮之后，出现一个提示窗口，直接点Insecure按钮。
+
+![](/cn/install/images/jconsole_connected.png)
+进去后就可以看到内存，线程各种信息了。
