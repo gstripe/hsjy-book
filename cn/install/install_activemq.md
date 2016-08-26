@@ -95,7 +95,7 @@ su - hsit -c '/opt/activemq-5.14.0/bin/activemq start'
 
 Broker1 连接 Broker2 不使用双向连接（Broker1 -&gt; Broker2）
 
-```js
+```
 <networkConnectors>
   <networkConnector uri="static://(tcp://s7.demo.jy.hsit:61616)"
      name="s6.p-bridge-s7.c" duplex="false"
@@ -103,6 +103,5 @@ Broker1 连接 Broker2 不使用双向连接（Broker1 -&gt; Broker2）
      decreaseNetworkConsumerPriority="false">
   </networkConnector>
 </networkConnectors>
-
 ```
 
