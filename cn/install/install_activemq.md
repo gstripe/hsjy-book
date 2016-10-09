@@ -43,6 +43,12 @@ cd apache-activemq-5.14.0
 需要一个可靠的DSF，这里偷懒暂使用Linux Samba建立了一个共享目录进行测试。
 共享目录为 \192.168.2.70\share
 **
+
+> service smb start 启动samba服务
+> 
+> ps -ef \|grep smb 查看进程是否已经启动
+
+
 挂载文件系统
 
 ```
@@ -96,7 +102,7 @@ su - hsit -c '/opt/activemq-5.14.0/bin/activemq start'
 Broker1 连接 Broker2 不使用双向连接（Broker1 -&gt; Broker2）
 
 > duplex="false" 表示仅使用单向通讯
-
+> 
 > conduitSubscriptions="false" 表示每个 Consumer 上都会收到所有的发送的消息，一个远程端上注册的多个消费者不会被视为一个消费者。
 
 ```
@@ -111,7 +117,7 @@ Broker1 连接 Broker2 不使用双向连接（Broker1 -&gt; Broker2）
 
 ## 开启远程监控
 
-在activemq.xml配置文件中的<broker 标签中增加 useJmx="true"，然后重启Borkder即可使用。（这里就不配置安全性相关的选项了）
+在activemq.xml配置文件中的&lt;broker 标签中增加 useJmx="true"，然后重启Borkder即可使用。（这里就不配置安全性相关的选项了）
 
 接着在windows控制台什么的打开jconsole（有配置好JDK环境了）
 
@@ -128,3 +134,4 @@ Broker1 连接 Broker2 不使用双向连接（Broker1 -&gt; Broker2）
 
 ![](/cn/install/images/jconsole_connected.png)
 进去后就可以看到内存，线程各种信息了。
+
