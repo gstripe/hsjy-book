@@ -13,5 +13,5 @@ http://maven.apache.org/download.cgi
 
 配置步骤
 
-* 安装JDK 下载[ftp]/jdk/jdk-7u80-windows-x64.zip 解压到/dev4j/sdk下
+* 安装JDK
 

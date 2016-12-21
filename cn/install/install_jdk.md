@@ -28,3 +28,9 @@ Java(TM) SE Runtime Environment (build 1.7.0_80-b15)
 Java HotSpot(TM) 64-Bit Server VM (build 24.80-b11, mixed mode)
 
 ```
+
+## Windows下安装
+
+* 下载[ftp]/jdk/jdk-7u80-windows-x64.zip
+* 解压到/dev4j/sdk下
+* 配置环境变量
