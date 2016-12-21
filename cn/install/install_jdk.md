@@ -34,3 +34,4 @@ Java HotSpot(TM) 64-Bit Server VM (build 24.80-b11, mixed mode)
 * 下载[ftp]/jdk/jdk-7u80-windows-x64.zip
 * 解压到/dev4j/sdk下
 * 配置环境变量
+![](/cn/install/images/dev4j_java_home.png)
