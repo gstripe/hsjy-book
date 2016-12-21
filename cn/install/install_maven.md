@@ -2,4 +2,12 @@
 
 ##　Windows下安装
 
+最新版本下载
+```
+http://maven.apache.org/download.cgi
+```
+本地FTP
+```
+[ftp]/maven/apache-maven-3.3.9-bin.zip
+```
 
