@@ -8,5 +8,5 @@
 
 * 配置私服地址
 
-* 安全性配置
+* 安全性配置 settings-security.xml
 

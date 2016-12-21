@@ -27,4 +27,4 @@ http://maven.apache.org/download.cgi
 
 > MAVEN_OPTS 避免maven项目过大导致OOM
 
-以上都是默认配置，具体自定义设置请移步此处
+以上都是默认配置，具体自定义设置请移步此处——[Maven 使用](/cn/usage/useage_maven.md)
