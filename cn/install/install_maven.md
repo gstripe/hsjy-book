@@ -21,6 +21,6 @@ http://maven.apache.org/download.cgi
 
 ![](/cn/install/images/dev4j_mvn_home.png)
 
-* 控制台执行 java -version 出现以下提示说明安装成功
+* 控制台执行 mvn -v 出现以下提示说明安装成功
 
 ![](/cn/install/images/dev4j_mvn_home_version.png)
