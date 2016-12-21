@@ -17,4 +17,5 @@ http://maven.apache.org/download.cgi
 
 * 解压文件到目录 dev4j/tools下
 
-* 配置环境变量
+* 配置环境变量 MVN_HOME、MAVEN_OPTS、添加到Path中
+
