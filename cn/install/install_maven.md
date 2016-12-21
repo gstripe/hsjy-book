@@ -19,3 +19,5 @@ http://maven.apache.org/download.cgi
 
 * 配置环境变量 MVN_HOME、MAVEN_OPTS、添加到Path中
 
+![](/cn/install/images/dev4j_mvn_home.png)
+
