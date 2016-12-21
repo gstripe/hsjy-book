@@ -35,3 +35,6 @@ Java HotSpot(TM) 64-Bit Server VM (build 24.80-b11, mixed mode)
 * 解压到/dev4j/sdk下
 * 配置环境变量
 ![](/cn/install/images/dev4j_java_home.png)
+
+* 控制台执行 java -version 出现以下提示说明安装成功
+![](/cn/install/images/dev4j_java_home_version.png)
