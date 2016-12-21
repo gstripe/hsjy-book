@@ -24,3 +24,5 @@ http://maven.apache.org/download.cgi
 * 控制台执行 mvn -v 出现以下提示说明安装成功
 
 ![](/cn/install/images/dev4j_mvn_home_version.png)
+
+> MAVEN_OPTS 避免maven项目过大导致OOM
