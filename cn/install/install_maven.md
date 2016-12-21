@@ -15,3 +15,4 @@ http://maven.apache.org/download.cgi
 
 * [安装JDK](/cn/install/install_jdk.md)（已经安装则忽略，jdk7以上）
 
+* 解压到目录 dev4j/tools下
