@@ -26,3 +26,5 @@ http://maven.apache.org/download.cgi
 ![](/cn/install/images/dev4j_mvn_home_version.png)
 
 > MAVEN_OPTS 避免maven项目过大导致OOM
+
+以上都是默认配置，具体自定义设置请移步此处
