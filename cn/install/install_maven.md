@@ -13,5 +13,5 @@ http://maven.apache.org/download.cgi
 
 配置步骤
 
-* [安装JDK](/cn/install/install_jdk.md)（已经安装则忽略，1.7以上）——
+* [安装JDK](/cn/install/install_jdk.md)（已经安装则忽略，1.7以上）
 
