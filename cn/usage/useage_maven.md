@@ -52,9 +52,9 @@
 rem 创建项目骨架
 mvn archetype:generate -DgroupId=com.icsshs.demo.mvn -DartifactId=mvn-ch01 -Dversion=0.0.1-SNAPSHOT -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -DarchetypeCatalog=internal
 rem 编译
-maven compile
+mvn compile
 rem 测试
-maven test
+mvn test
 rem 清空
 mvn clean
 rem 打包
