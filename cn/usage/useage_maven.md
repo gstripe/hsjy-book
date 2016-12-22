@@ -47,4 +47,4 @@
 
 * 安全性配置 settings-security.xml
 
-
+  > 配置远程仓库(这里我们是配置nexus私服)的用户/密码
