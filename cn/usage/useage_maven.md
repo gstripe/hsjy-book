@@ -52,15 +52,19 @@
 rem 创建项目骨架
 mvn archetype:generate -DgroupId=com.icsshs.demo.mvn -DartifactId=mvn-ch01 -Dversion=0.0.1-SNAPSHOT -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -DarchetypeCatalog=internal
 rem 编译
-mvn compile
+mvn compile
+
 rem 测试
-mvn test
+mvn test
+
 rem 清空
 mvn clean
+
 rem 打包
-mvn package
-rem 安装
-mvn install
+mvn package
+
+rem 安装
+mvn install
 ```
 
 # 安全性配置 settings-security.xml 不完整,未编写.
