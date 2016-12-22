@@ -37,7 +37,14 @@
 ```
 
 * 测试一下,命令行下执行一下mvn help:system命令看看都打印了什么
+  ![](/cn/usage/images/dev4j_mvn_help!system.png)
 
+  > 从配置的私服里面下载所需要的依赖包,如果没有配置会从中央仓库进行下载,正常情况下要很久很久.
+  > 
+  > 直到显示BUILD SUCCESS后说明配置无问题.
+  > 
+  > 同时,可以看到本地仓库目录里保存的从私服下载下来的依赖包.
 
 * 安全性配置 settings-security.xml
+
 
