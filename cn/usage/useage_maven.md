@@ -49,10 +49,9 @@
 # 基础用法
 
 ```
+rem 创建项目骨架
 mvn archetype:generate -DgroupId=com.icsshs.demo -DartifactId=mvn-ch01 -Dversion=0.0.1-SNAPSHOT
 ```
-
-
 
 # 安全性配置 settings-security.xml 不完整,未编写.
 
