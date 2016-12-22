@@ -48,6 +48,9 @@
 
 # 基础用法
 
+```
+mvn archetype:generate -DgroupId=com.icsshs.demo -DartifactId=mvn-ch01 -Dversion=0.0.1-SNAPSHOT
+```
 
 
 
