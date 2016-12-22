@@ -25,7 +25,6 @@
 
 * 配置私服地址
 
-
 ```
 <!--在mirros下加入以下配置片段 -->
 <mirror>
@@ -35,6 +34,9 @@
     <url>http://10.188.180.195:8081/nexus/content/groups/public/</url>
 </mirror>
 ```
+
+* 测试一下
+
 
 * 安全性配置 settings-security.xml
 
