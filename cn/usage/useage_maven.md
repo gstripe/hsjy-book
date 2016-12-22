@@ -13,13 +13,11 @@ mkdir .m2
 ```
 * 复制settings.xml文件到.m2目录中修改，不建议直接修改原目录下的配置文件
 
-* 配置本地仓库目录路径
-```
-打开.m2目录下的settings.xml
-在localRepository下加入
-<localRepository>C:\dev4j\repo</localRepository>
-注C:\dev4j\repo为你本地仓库地址
-```
+* 配置本地仓库目录路径  
+![](/cn/usage/images/dev4j_mvn_settings_localRepository.png)
+    > 打开.m2目录下的settings.xml，在localRepository下加入`<localRepository>C:\dev4j\repo</localRepository>`
+    
+    > 注C:\dev4j\repo为你本地仓库地址
 
 * 配置私服地址
 
