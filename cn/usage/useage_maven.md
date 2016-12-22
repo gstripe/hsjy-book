@@ -63,15 +63,17 @@ mvn clean
 rem 打包
 mvn package
 
-rem 安装
-mvn install
-
 rem 运行
 java -cp target/mvn-ch01-0.0.1-SNAPSHOT.jar com.icsshs.demo.mvn.App 
 
 ```
 
 # 发布
+
+* 发布到本地仓库
+    > rem 安装
+    > mvn install
+* 发布到远程仓库
 
 # 安全性配置 settings-security.xml 不完整,未编写.
 
