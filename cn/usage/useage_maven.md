@@ -3,10 +3,16 @@
 ## settings.xml配置
 
 * 复制到.m2目录下进行修改，这里不建议直接修改原目录下的配置文件
+```
+进入Window用户目录
+cd %HOMEPATH%
+mkdir .m2
+```
 
 * 配置本地仓库目录路径
 
 * 配置私服地址
 
 * 安全性配置 settings-security.xml
+
 
