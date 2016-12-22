@@ -9,6 +9,7 @@ cd %HOMEPATH%
 # 创建.m2目录
 mkdir .m2
 # 创建本地仓库目录
+# 在dev4j目录下创建 repo 目录
 ```
 * 复制settings.xml文件到.m2目录中修改，不建议直接修改原目录下的配置文件
 
