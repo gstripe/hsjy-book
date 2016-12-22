@@ -35,7 +35,7 @@
 </mirror>
 ```
 
-* 测试一下
+* 测试一下,执行一下这个命令看看都打印了什么
 
 
 * 安全性配置 settings-security.xml
