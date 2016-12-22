@@ -6,6 +6,7 @@
 ```
 # 进入Window用户目录
 cd %HOMEPATH%
+# 创建.m2目录
 mkdir .m2
 ```
 
