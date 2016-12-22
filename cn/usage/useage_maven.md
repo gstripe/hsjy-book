@@ -9,7 +9,6 @@ cd %HOMEPATH%
 # 创建.m2目录
 mkdir .m2
 # 复制settings.xml到.m2
-
 ```
 
 * 配置本地仓库目录路径
