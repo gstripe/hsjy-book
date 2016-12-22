@@ -35,7 +35,7 @@
 </mirror>
 ```
 
-* 测试一下,控制台下执行一下mvn help:system命令看看都打印了什么
+* 测试一下,命令行下执行一下mvn help:system命令看看都打印了什么
 
 
 * 安全性配置 settings-security.xml
