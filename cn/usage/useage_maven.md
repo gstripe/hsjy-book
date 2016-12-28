@@ -80,7 +80,7 @@ java -cp target/mvn-ch01-0.0.1-SNAPSHOT.jar com.icsshs.demo.mvn.App
 * 发布到远程仓库
 
 
-# 安全性配置 settings-security.xml 不完整,未编写.
+# settings-security.xml.
 
 > 配置远程仓库\(这里我们是配置nexus私服\)的用户\/密码
 
