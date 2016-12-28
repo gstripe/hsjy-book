@@ -74,15 +74,25 @@ java -cp target/mvn-ch01-0.0.1-SNAPSHOT.jar com.icsshs.demo.mvn.App
 * 发布到本地仓库
 
   ```
-    rem 安装
     mvn install
   ```
 
 * 发布到远程仓库
+ ```
+
+ mvn deploy
+
+ ```
+
+
+ rem 安装
+
+ mvn install
+
+ ```
 
 
 # settings-security.xml.
 
 # 配置远程仓库\(这里我们是配置nexus私服\)的用户\/密码
-
 
