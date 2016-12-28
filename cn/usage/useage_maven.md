@@ -20,11 +20,10 @@
   ![](/cn/usage/images/dev4j_mvn_settings_localRepository.png)
 
   > 打开.m2目录下的settings.xml，在localRepository下加入`<localRepository>C:\dev4j\repo</localRepository>`
-  > 
+  >
   > 注: C:\dev4j\repo为你本地仓库地址
 
 * 配置私服地址
-
 
 ```
 <!--在mirros下加入以下配置片段 -->
@@ -36,15 +35,14 @@
 </mirror>
 ```
 
-* 测试一下,命令行下执行一下mvn help:system命令看看都打印了什么
+* 测试一下,命令行下执行一下mvn help:system命令看看都打印了什么  
   ![](/cn/usage/images/dev4j_mvn_help!system.png)
 
   > 从配置的私服里面下载所需要的依赖包,如果没有配置会从中央仓库进行下载,正常情况下要很久很久.
-  > 
+  >
   > 直到显示BUILD SUCCESS后说明配置无问题.
-  > 
+  >
   > 同时,可以看到本地仓库目录里保存的从私服下载下来的依赖包.
-
 
 # 基础用法
 
@@ -65,8 +63,7 @@ rem 打包
 mvn package
 
 rem 运行
-java -cp target/mvn-ch01-0.0.1-SNAPSHOT.jar com.icsshs.demo.mvn.App 
-
+java -cp target/mvn-ch01-0.0.1-SNAPSHOT.jar com.icsshs.demo.mvn.App
 ```
 
 # 发布
@@ -74,35 +71,36 @@ java -cp target/mvn-ch01-0.0.1-SNAPSHOT.jar com.icsshs.demo.mvn.App
 * 发布到本地仓库
 
   ```
-    mvn install
+  mvn install
   ```
 
 * 发布到远程仓库
 
- ```
-   mvn deploy
- ```
+  ```
+  mvn deploy
+  ```
 
-# settings-security.xml.
+# settings-security.xml
 
 # 配置远程仓库\(这里我们是配置nexus私服\)的用户\/密码
 
 1. settings.xml里配置用户\/密码
 
- ```
-    <!-- servers下进行配置，这里配置snapshot。icsshs为测试账号。-->
+   ```
+   <!-- servers下进行配置，这里配置snapshot。icsshs为测试账号。-->
     <server>
          <id>icsshs-snapshot</id>
          <username>jydemo</username>
          <password>jydemo</password>
     </server>
- ```
+   ```
 
 2. pom.xml配置snapshot仓库地址
-  ```
-    <!-- properties nexus -->
+
+   ```
+   <!-- properties nexus -->
     <sonatype.nexus.baseurl>http://10.188.180.195:8081/nexus</sonatype.nexus.baseurl>
-    
+
     <!-- distributionManagement -->
     <distributionManagement>
          <repository>
@@ -116,4 +114,7 @@ java -cp target/mvn-ch01-0.0.1-SNAPSHOT.jar com.icsshs.demo.mvn.App
              <url>${sonatype.nexus.baseurl}/content/repositories/snapshots/</url>
          </snapshotRepository>
     </distributionManagement>
-  ```
+   ```
+
+
+
