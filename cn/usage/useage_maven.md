@@ -82,6 +82,6 @@ java -cp target/mvn-ch01-0.0.1-SNAPSHOT.jar com.icsshs.demo.mvn.App
 
 # settings-security.xml.
 
-> 配置远程仓库\(这里我们是配置nexus私服\)的用户\/密码
+# 配置远程仓库\(这里我们是配置nexus私服\)的用户\/密码
 
 
