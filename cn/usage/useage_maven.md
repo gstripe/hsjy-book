@@ -97,4 +97,5 @@ java -cp target/mvn-ch01-0.0.1-SNAPSHOT.jar com.icsshs.demo.mvn.App
          <password>jydemo</password>
     </server>
  ```
-2. pom.xml配置仓库地址
+2. pom.xml配置snapshot仓库地址
+
