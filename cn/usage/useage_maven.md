@@ -93,8 +93,8 @@ java -cp target/mvn-ch01-0.0.1-SNAPSHOT.jar com.icsshs.demo.mvn.App
     <!-- servers下进行配置，这里配置snapshot。icsshs为测试账号。-->
     <server>
          <id>icsshs-snapshot</id>
-         <username>icsshs</username>
-         <password>icsshs</password>
+         <username>jydemo</username>
+         <password>jydemo</password>
     </server>
 
  ```
