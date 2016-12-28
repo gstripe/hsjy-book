@@ -86,4 +86,15 @@ java -cp target/mvn-ch01-0.0.1-SNAPSHOT.jar com.icsshs.demo.mvn.App
 # settings-security.xml.
 
 # 配置远程仓库\(这里我们是配置nexus私服\)的用户\/密码
+
 1. settings.xml里配置用户\/密码
+
+ ```
+    <!-- servers下进行配置，这里配置snapshot。icsshs为测试账号。-->
+    <server>
+         <id>icsshs-snapshot</id>
+         <username>icsshs</username>
+         <password>icsshs</password>
+    </server>
+
+ ```
