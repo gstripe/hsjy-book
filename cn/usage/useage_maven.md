@@ -46,32 +46,38 @@
 
 ## 基础用法
 
-  * 创建项目骨架
+* 创建项目骨架
+
   ```
   mvn archetype:generate -DgroupId=com.icsshs.demo.mvn -DartifactId=mvn-ch01 -Dversion=0.0.1-SNAPSHOT -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -DarchetypeCatalog=internal
   ```
-  
-  * 编译
+
+* 编译
+
   ```
   mvn compile
   ```
-  
-  * 测试
+
+* 测试
+
   ```
   mvn test
   ```
-  
-  * 清空
+
+* 清空
+
   ```
   mvn clean
   ```
-  
-  * 打包
+
+* 打包
+
   ```
   mvn package
   ```
-  
-  * 运行
+
+* 运行
+
   ```
   java -cp target/mvn-ch01-0.0.1-SNAPSHOT.jar com.icsshs.demo.mvn.App
   ```
@@ -90,7 +96,7 @@
   mvn deploy
   ```
 
-## 配置远程仓库\(这里我们是配置nexus私服\)的用户\/密码
+## 配置远程仓库\(连到nexus私服\)
 
 1. settings.xml里配置用户/密码
 
@@ -123,9 +129,8 @@
        </snapshotRepository>
    </distributionManagement>
    ```
-   
+
 ## settings-security.xml
+
 用户/密码配置为非明文方式
-
-
 
