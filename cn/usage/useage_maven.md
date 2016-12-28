@@ -80,7 +80,7 @@ java -cp target/mvn-ch01-0.0.1-SNAPSHOT.jar com.icsshs.demo.mvn.App
   mvn deploy
   ```
 
-# 配置远程仓库\(这里我们是配置nexus私服\)的用户\/密码
+## 配置远程仓库\(这里我们是配置nexus私服\)的用户\/密码
 
 1. settings.xml里配置用户/密码
 
@@ -114,7 +114,7 @@ java -cp target/mvn-ch01-0.0.1-SNAPSHOT.jar com.icsshs.demo.mvn.App
    </distributionManagement>
    ```
    
-# settings-security.xml
+## settings-security.xml
 用户/密码配置为非明文方式
 
 
