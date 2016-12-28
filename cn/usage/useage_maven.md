@@ -97,5 +97,23 @@ java -cp target/mvn-ch01-0.0.1-SNAPSHOT.jar com.icsshs.demo.mvn.App
          <password>jydemo</password>
     </server>
  ```
-2. pom.xml配置snapshot仓库地址
 
+2. pom.xml配置snapshot仓库地址
+```
+<!-- properties nexus -->
+<sonatype.nexus.baseurl>http://10.188.180.195:8081/nexus</sonatype.nexus.baseurl>
+
+<!-- distributionManagement -->
+<distributionManagement>
+     <repository>
+         <id>icsshs-release</id>
+         <name>Release</name>
+         <url>${sonatype.nexus.baseurl}/content/repositories/releases/</url>
+     </repository>
+     <snapshotRepository>
+         <id>icsshs-snapshot</id>
+         <name>Snapshot</name>
+         <url>${sonatype.nexus.baseurl}/content/repositories/snapshots/</url>
+     </snapshotRepository>
+</distributionManagement>
+```
