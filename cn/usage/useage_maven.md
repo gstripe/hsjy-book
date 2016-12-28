@@ -116,5 +116,4 @@ java -cp target/mvn-ch01-0.0.1-SNAPSHOT.jar com.icsshs.demo.mvn.App
          <url>${sonatype.nexus.baseurl}/content/repositories/snapshots/</url>
      </snapshotRepository>
 </distributionManagement>
-
 ```
