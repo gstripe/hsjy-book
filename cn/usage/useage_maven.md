@@ -96,7 +96,7 @@
 
 ## 配置远程仓库\(连到nexus私服\)
 
-1. settings.xml里配置用户/密码
+1. 在settings.xml里配置用户与密码
 
    ```
    <!-- servers下进行配置，这里配置snapshot。icsshs为测试账号。-->
@@ -107,7 +107,7 @@
    </server>
    ```
 
-2. 项目中的pom.xml配置私服仓库地址
+2. 在pom.xml配置私服仓库地址
 
    ```
    <!-- properties nexus -->
