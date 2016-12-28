@@ -25,15 +25,15 @@
 
 * 配置私服地址
 
-```
-<!--在mirros下加入以下配置片段 -->
-<mirror>
-    <id>icsshs-nexus</id>
-    <mirrorOf>*</mirrorOf>
-    <name>ICSSHS Nexus</name>
-    <url>http://10.188.180.195:8081/nexus/content/groups/public/</url>
-</mirror>
-```
+  ```
+  <!--在mirros下加入以下配置片段 -->
+  <mirror>
+      <id>icsshs-nexus</id>
+      <mirrorOf>*</mirrorOf>
+      <name>ICSSHS Nexus</name>
+      <url>http://10.188.180.195:8081/nexus/content/groups/public/</url>
+  </mirror>
+  ```
 
 * 测试一下,命令行下执行一下mvn help:system命令看看都打印了什么  
   ![](/cn/usage/images/dev4j_mvn_help!system.png)
