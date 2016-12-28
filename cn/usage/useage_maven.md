@@ -109,7 +109,7 @@
    </server>
    ```
 
-2. 项目中的pom.xml配置release和snapshot仓库地址
+2. 项目中的pom.xml配置私服仓库地址
 
    ```
    <!-- properties nexus -->
