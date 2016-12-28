@@ -86,35 +86,35 @@ java -cp target/mvn-ch01-0.0.1-SNAPSHOT.jar com.icsshs.demo.mvn.App
 
 1. settings.xml里配置用户/密码
 
-   ```
-    <!-- servers下进行配置，这里配置snapshot。icsshs为测试账号。-->
-    <server>
-         <id>icsshs-snapshot</id>
-         <username>jydemo</username>
-         <password>jydemo</password>
-    </server>
-   ```
+  ```
+  <!-- servers下进行配置，这里配置snapshot。icsshs为测试账号。-->
+  <server>
+       <id>icsshs-snapshot</id>
+       <username>jydemo</username>
+       <password>jydemo</password>
+  </server>
+  ```
 
 2. pom.xml配置snapshot仓库地址
 
-   ```
-    <!-- properties nexus -->
-    <sonatype.nexus.baseurl>http://10.188.180.195:8081/nexus</sonatype.nexus.baseurl>
-
-    <!-- distributionManagement -->
-    <distributionManagement>
-         <repository>
-             <id>icsshs-release</id>
-             <name>Release</name>
-             <url>${sonatype.nexus.baseurl}/content/repositories/releases/</url>
-         </repository>
-         <snapshotRepository>
-             <id>icsshs-snapshot</id>
-             <name>Snapshot</name>
-             <url>${sonatype.nexus.baseurl}/content/repositories/snapshots/</url>
-         </snapshotRepository>
-    </distributionManagement>
-   ```
+  ```
+  <!-- properties nexus -->
+  <sonatype.nexus.baseurl>http://10.188.180.195:8081/nexus</sonatype.nexus.baseurl>
+  
+  <!-- distributionManagement -->
+  <distributionManagement>
+       <repository>
+           <id>icsshs-release</id>
+           <name>Release</name>
+           <url>${sonatype.nexus.baseurl}/content/repositories/releases/</url>
+       </repository>
+       <snapshotRepository>
+           <id>icsshs-snapshot</id>
+           <name>Snapshot</name>
+           <url>${sonatype.nexus.baseurl}/content/repositories/snapshots/</url>
+       </snapshotRepository>
+  </distributionManagement>
+  ```
 
 
 
