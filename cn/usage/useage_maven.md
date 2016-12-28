@@ -76,7 +76,7 @@
   java -cp target/mvn-ch01-0.0.1-SNAPSHOT.jar com.icsshs.demo.mvn.App
   ```
 
-# 发布
+## 发布
 
 * 发布到本地仓库
 
