@@ -46,25 +46,35 @@
 
 ## 基础用法
 
-```
-rem 创建项目骨架
-mvn archetype:generate -DgroupId=com.icsshs.demo.mvn -DartifactId=mvn-ch01 -Dversion=0.0.1-SNAPSHOT -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -DarchetypeCatalog=internal
-
-rem 编译
-mvn compile
-
-rem 测试
-mvn test
-
-rem 清空
-mvn clean
-
-rem 打包
-mvn package
-
-rem 运行
-java -cp target/mvn-ch01-0.0.1-SNAPSHOT.jar com.icsshs.demo.mvn.App
-```
+  > 创建项目骨架
+  ```
+  mvn archetype:generate -DgroupId=com.icsshs.demo.mvn -DartifactId=mvn-ch01 -Dversion=0.0.1-SNAPSHOT -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -DarchetypeCatalog=internal
+  ```
+  
+  > 编译
+  ```
+  mvn compile
+  ```
+  
+  > 测试
+  ```
+  mvn test
+  ```
+  
+  > 清空
+  ```
+  mvn clean
+  ```
+  
+  > 打包
+  ```
+  mvn package
+  ```
+  
+  > 运行
+  ```
+  java -cp target/mvn-ch01-0.0.1-SNAPSHOT.jar com.icsshs.demo.mvn.App
+  ```
 
 # 发布
 
