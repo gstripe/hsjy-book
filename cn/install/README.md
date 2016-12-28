@@ -2,7 +2,7 @@
 
 * 软件下载 ftp://hsftp:hsftp@10.188.180.99/devtools
 
-* FTP文档约定前缀[ftp]
+* 存放工具文件的FTP路径在文档中约定前缀为：[ftp]
 
 * root
 
