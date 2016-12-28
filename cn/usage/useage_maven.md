@@ -80,7 +80,7 @@ java -cp target/mvn-ch01-0.0.1-SNAPSHOT.jar com.icsshs.demo.mvn.App
 * 发布到远程仓库
 
  ```
- mvn deploy
+   mvn deploy
  ```
 
 # settings-security.xml.
