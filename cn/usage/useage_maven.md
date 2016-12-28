@@ -84,10 +84,10 @@ java -cp target/mvn-ch01-0.0.1-SNAPSHOT.jar com.icsshs.demo.mvn.App
 
 # 配置远程仓库\(这里我们是配置nexus私服\)的用户\/密码
 
-1. settings.xml里配置用户\/密码
+1. settings.xml里配置用户/密码
 
    ```
-   <!-- servers下进行配置，这里配置snapshot。icsshs为测试账号。-->
+    <!-- servers下进行配置，这里配置snapshot。icsshs为测试账号。-->
     <server>
          <id>icsshs-snapshot</id>
          <username>jydemo</username>
@@ -98,7 +98,7 @@ java -cp target/mvn-ch01-0.0.1-SNAPSHOT.jar com.icsshs.demo.mvn.App
 2. pom.xml配置snapshot仓库地址
 
    ```
-   <!-- properties nexus -->
+    <!-- properties nexus -->
     <sonatype.nexus.baseurl>http://10.188.180.195:8081/nexus</sonatype.nexus.baseurl>
 
     <!-- distributionManagement -->
