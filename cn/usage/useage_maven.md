@@ -130,9 +130,11 @@
 
 ## settings-security.xml
 
-Maven 2.1.0之后所提供的密码加密功能，将密码配置为非明文方式。  
+Maven 2.1.0之后所提供的密码加密功能，将密码配置为非明文方式。
 
 > [http://maven.apache.org/guides/mini/guide-encryption.html](http://maven.apache.org/guides/mini/guide-encryption.html)
 
+打包
 
+> [http://blog.csdn.net/zhangdaiscott/article/details/6911640]
 
