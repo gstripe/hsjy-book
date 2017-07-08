@@ -27,6 +27,19 @@ java version "1.7.0_80"
 Java(TM) SE Runtime Environment (build 1.7.0_80-b15)
 Java HotSpot(TM) 64-Bit Server VM (build 24.80-b11, mixed mode)
 ```
+```
+其他：
+在root下配置
+#set java environment
+vi /etc/profile
+
+#jdk
+export JAVA_HOME=/usr/local/jdk1.7.0_80
+export PATH=$PATH:$JAVA_HOME/bin
+
+#live
+source /etc/profile
+```
 
 ## Windows下安装
 
