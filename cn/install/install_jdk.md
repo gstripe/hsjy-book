@@ -6,7 +6,7 @@
 # root
 su root
 # Download and unzip the packaged version.
-wget ftp://hsftp:hsftp@10.188.180.99/devtools/jdk/jdk-8u92-linux-x64.tar.gz
+wget ftp://hsftp:hsftp@10.188.180.99/devtools/jdk/jdk-7u80-linux-x64.tar.gz
 tar -zxvf jdk-7u80-linux-x64.tar.gz
 # change owner jdk1.7.0_80
 chown -R hsit.hsit jdk1.7.0_80
