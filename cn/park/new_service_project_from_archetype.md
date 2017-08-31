@@ -1,4 +1,4 @@
-# 创建服务工程
+![![](cn/park/images/new_project_maven_add_archetype.pn](cn/park/images/new_project_maven_add_archetype.png)g)# 创建服务工程
 
 ## 配置alpaca-service-archetype的Maven坐标
 
@@ -21,7 +21,7 @@
     ```
 5. 点击OK，如图所示说明archetype添加成功
 
-![image](http://note.youdao.com/yws/public/resource/cd9e11a3248ccfe40bec4b8db7031ae7/xmlnote/8039D487871F44FE85B5F0C7F70A6584/23479)
+![image](cn/park/images/new_project_maven_add_archetype.png)
 
 - ### Spring Tool Suite
     
