@@ -20,8 +20,7 @@
     </dependency>
     ```
 5. 点击OK，如图所示说明archetype添加成功
-
-![image](cn/park/images/new_project_maven_add_archetype.png)
+![image](/cn/park/images/new_project_maven_add_archetype.png)
 
 - ### Spring Tool Suite
     
@@ -49,13 +48,13 @@
 
 9. 在Properties属性格中添加一个新的属性Name项:package与Value项:alpaca.service.example，如下图所示：
 
-![image](http://note.youdao.com/yws/public/resource/cd9e11a3248ccfe40bec4b8db7031ae7/xmlnote/B346561DED244AB5911E4DEB03C47A17/23510)
+![image](/cn/park/images/new_project_maven_add_package.png)
 
 10. 点击Next
 
 11. Project name项修改成service-example，顺便在More Settings修改要放置该工程的路径，如下图所示：
 
-![image](http://note.youdao.com/yws/public/resource/cd9e11a3248ccfe40bec4b8db7031ae7/xmlnote/42F628FCD2CF4C9FB951C860C7C6C124/23526)
+![image](/cn/park/images/new_project_more_settings.png)
 
 12. 点击Finish，打开新窗口，开始通过archetype进行项目的生成，如果在右下角有弹出Maven projects need to be imported的提示，请点击其中任何一个选项
 
@@ -74,5 +73,5 @@
 
 14. 最终项目结构如下：
 
-![image](http://note.youdao.com/yws/public/resource/cd9e11a3248ccfe40bec4b8db7031ae7/xmlnote/353CE6B5C73347408C1E3A6B8BB14DE6/23546)
+![image](/cn/park/images/project_info.png)
 
