@@ -22,4 +22,7 @@
     
     * [Maven 使用](cn/usage/useage_maven.md)
 
+* Alpaca Park
+    
+    * [从archetype创建服务工程](cn/park/new_service_project_from_archetype.md)
     
