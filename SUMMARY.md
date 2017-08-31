@@ -1,8 +1,8 @@
 # Summary
 
-1. [Introduction](README.md)
+* [Introduction](README.md)
 
-2. 安装
+* 安装
     
     * [jdk安装](/cn/install/install_jdk.md)
     
@@ -18,6 +18,8 @@
     
     * [FastDSF](cn/install/install_dsf.md)
 
-3. 使用
+* 使用
+    
+    * [Maven 使用](cn/usage/useage_maven.md)
 
     
