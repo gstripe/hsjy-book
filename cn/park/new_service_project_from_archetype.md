@@ -11,14 +11,13 @@
   3. 点击Add Archetype...按钮
 
   4. 在输入框输入对应的坐标
-
-     ```
-     <dependency>
-     <groupId>alpaca.service</groupId>
-     <artifactId>alpaca-service-archetype</artifactId>
-     <version>0.0.1-RELEASE</version>
-     </dependency>
-     ```
+ ```
+ <dependency>
+ <groupId>alpaca.service</groupId>
+ <artifactId>alpaca-service-archetype</artifactId>
+ <version>0.0.1-RELEASE</version>
+ </dependency>
+ ```
 
   5. 点击OK，如图所示说明archetype添加成功
      ![image](/cn/park/images/new_project_maven_add_archetype.png)
