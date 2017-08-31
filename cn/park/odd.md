@@ -5,7 +5,9 @@ chmod a+x startall.sh
 ```
 
 ### JHipster 学习
-* JHipster Quick Start
+
+JHipster Quick Start
+
 * Install JHipster yarn global add generator-jhipster
 
 * Create a new directory and go into it mkdir myApp && cd myApp
