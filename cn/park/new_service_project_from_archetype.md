@@ -56,7 +56,11 @@
 
 ![image](/cn/park/images/new_project_more_settings.png)
 
-12. 点击Finish，打开新窗口，开始通过archetype进行项目的生成，如果在右下角有弹出Maven projects need to be imported的提示，请点击其中任何一个选项
+12. 点击Finish，打开新窗口，开始通过archetype进行项目的生成，如果在右下角有弹出Maven projects need to be imported的提示，请点击其中任何一个选项，如下图所示：
+
+![image](/cn/park/images/import_changes.png)
+
+
 
 13. 工程创建完毕之后，可以看到Message Maven Goal窗口下最后打印出如下信息即为创建成功
 
