@@ -55,6 +55,8 @@ getObject()返回实例的AOP代理
 #### 复合模式
 基于具有共同行为的多个对象的存在，用于构建更大的对象。
 较大的对象仍然具有与最小对象相同的特征。那么用它来定义相同的行为。
+在Spring世界中，我们检索复合对象的概念是org.springframework.beans.BeanMetadataElement接口
+** _TODO 那一段解释看不懂_ **
 
 #### 策略模式
 
