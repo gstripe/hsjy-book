@@ -114,3 +114,11 @@
 > 注意：这里规定由生成器生成的*Mapper.xml不添加任何自定义sql，如果需要添加自定义sql，则新建一个xml与Mapper.java对应
 
 
+* ### 配置文件
+> 略
+
+* ### 单元测试类
+> 基本写法参考ServiceMainApplicationTest
+> 直接在测试类上使用下面两个注解，就可以正常使用了
+> @RunWith(SpringRunner.class)
+> @SpringBootTest
