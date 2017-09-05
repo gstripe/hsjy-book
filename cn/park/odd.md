@@ -19,3 +19,22 @@ good4you
 
 在线创建应用
 > https://start.jhipster.tech
+
+### Spring框架中的设计模式学习
+
+解释器设计模式
+> 在编程中，分析一件事情，并决定它是什么意思。
+> 此模式基于表达式和评估器部分
+
+建设者模式
+> 创建对象模式之一
+> 简化复杂对象的创建，构建器背后隐藏了对象构造的复杂性
+> org.springframework.beans.factory.support.BeanDefinitionBuilder
+
+工厂方法
+> 创建对象模式之一
+> 通过公用静态方法对象进行初始化
+> public static Welcomer createWelcomer(MessageLocator messagesLocator)
+
+抽象工厂
+作为提供所需对象的东西
