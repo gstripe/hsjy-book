@@ -56,10 +56,10 @@
     ```
 
 * ### entity
-> 有Mybatis Generator生成的单表实体，这里我们使用的是tk通用Mapper的生成器生成的带有JPA注解的实体
+> 由Mybatis Generator生成的单表实体，这里我们使用的是tk通用Mapper的生成器生成的带有JPA注解的实体
 
 * ### mapper
-> 生成的通用Mapper接口，这里规定有生成器生成的接口不添加任何接口方法，如果需要添加新的接口方法，则自定义一个Mapper
+> 生成的通用Mapper接口，这里规定由生成器生成的接口不添加任何接口方法，如果需要添加新的接口方法，则自定义一个Mapper
 
 * ### service
 > service层，操作Mapper的类，实现业务逻辑，控制数据库事务，缓存相关等。
@@ -103,4 +103,14 @@
     
     }
     ```
+
+* ### mybatis.generator 配置
+> generator-config.properties 主要配置数据库连接信息
+> generator-config.xml 主要用来配置需要生成实体的表及做一些个性化的字段对应
+> config-demo.xml 生成器的一些配置说明
+
+* ### mybatis.mapper
+> 由Mybatis Generator生成的*Mapper.xml文件，此文件将会与src/main/java/xxx.xxx/mapper/*Mapper.java对应
+> 注意：这里规定由生成器生成的*Mapper.xml不添加任何自定义sql，如果需要添加自定义sql，则新建一个xml与Mapper.java对应
+
 
