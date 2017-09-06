@@ -114,6 +114,13 @@ chkconfig $SERVICE_NAME off
 chkconfig --list
 ```
 
+## 服务更新步骤
+> 如果服务不需要全新部署，只需要更新jar包，那么使用下面的步骤进行服务程序包的更新
+```
+
+```
+
+
 > 一些安全相关的设置，可以放置服务程序被勿删除修改什么的
 chown hsit:hsit service-account.jar
 chmod 500 service-account.jar
