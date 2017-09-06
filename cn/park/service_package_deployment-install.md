@@ -104,9 +104,13 @@ JAVA_OPTS=-Xmx128M
 RUN_ARGS=--spring.profiles.active=prod
 
 # 启动服务
-# su -hsit -c 'service $SERVICE_NAME start' 是不是这个可以做到自动启动里面去？
-# 或 hsit用户登录后执行
 service $SERVICE_NAME start
+
+# 待测试 开机启动
+vi /etc/rc.local
+
+# 接着输入如下内容
+su -hsit -c 'service $SERVICE_NAME start'
 
 ```
 
