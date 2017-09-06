@@ -5,6 +5,7 @@
 > http://blog.didispace.com/spring-boot-run-backend/
 > http://blog.csdn.net/hengyunabc/article/details/51050219
 > http://www.cnblogs.com/lobo/p/5657684.html
+> http://blog.phpha.com/backup/archives/1458.html
 
 ## Centos6 下将服务安装为后台服务
 
@@ -106,10 +107,11 @@ RUN_ARGS=--spring.profiles.active=prod
 # 启动服务
 service $SERVICE_NAME start
 
-# 开机启动，添加、打开、关闭
+# 开机启动，添加、打开、关闭、查看服务启动状态
 chkconfig --add $SERVICE_NAME
 chkconfig $SERVICE_NAME on
 chkconfig $SERVICE_NAME off
+chkconfig --list
 ```
 
 > 一些安全相关的设置，可以放置服务程序被勿删除修改什么的
