@@ -132,6 +132,32 @@ wget ftp://hsftp:hsftp@10.188.180.99/alpaca/conf/192.168.2.70/park-gateway.conf
 wget ftp://hsftp:hsftp@10.188.180.99/alpaca/conf/192.168.2.70/park-turbine.conf
 wget ftp://hsftp:hsftp@10.188.180.99/alpaca/conf/192.168.2.70/park-zipkin-server.conf
 
+sshpass -p hsit ssh hsit@192.168.2.71 -o StrictHostKeyChecking=no
+cd ~/alpaca
+wget ftp://hsftp:hsftp@10.188.180.99/alpaca/conf/192.168.2.71/park-eureka-server.conf
+wget ftp://hsftp:hsftp@10.188.180.99/alpaca/conf/192.168.2.71/park-config-server.conf
+
+sshpass -p hsit ssh hsit@192.168.2.72 -o StrictHostKeyChecking=no
+cd ~/alpaca
+wget ftp://hsftp:hsftp@10.188.180.99/alpaca/conf/192.168.2.72/park-eureka-server.conf
+wget ftp://hsftp:hsftp@10.188.180.99/alpaca/conf/192.168.2.72/park-config-server.conf
+
+sshpass -p hsit ssh hsit@192.168.2.73 -o StrictHostKeyChecking=no
+cd ~/alpaca
+wget ftp://hsftp:hsftp@10.188.180.99/alpaca/conf/192.168.2.73/park-eureka-server.conf
+wget ftp://hsftp:hsftp@10.188.180.99/alpaca/conf/192.168.2.73/park-config-server.conf
+
+sshpass -p hsit ssh hsit@192.168.2.74 -o StrictHostKeyChecking=no
+cd ~/alpaca
+wget ftp://hsftp:hsftp@10.188.180.99/alpaca/conf/192.168.2.74/service-account.conf
+
+sshpass -p hsit ssh hsit@192.168.2.75 -o StrictHostKeyChecking=no
+cd ~/alpaca
+wget ftp://hsftp:hsftp@10.188.180.99/alpaca/conf/192.168.2.75/service-account.conf
+
+sshpass -p hsit ssh hsit@192.168.2.76 -o StrictHostKeyChecking=no
+cd ~/alpaca
+wget ftp://hsftp:hsftp@10.188.180.99/alpaca/conf/192.168.2.76/service-account.conf
 
 > 一些安全相关的设置，可以放置服务程序被勿删除修改什么的
 chown hsit:hsit service-account.jar
