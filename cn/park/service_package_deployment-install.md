@@ -121,7 +121,6 @@ chkconfig --list
 
 ```
 
-
 > 一些安全相关的设置，可以放置服务程序被勿删除修改什么的
 chown hsit:hsit service-account.jar
 chmod 500 service-account.jar
