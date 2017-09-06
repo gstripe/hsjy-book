@@ -68,7 +68,7 @@ WORKING_DIR="$(pwd)"
 > 注意，第一次发布服务的时候需要进行如下配置：
 
 ```
-# 使用root用户连接到服务器
+# 使用root用户登录服务器
 su root
 
 # 删除旧的软链接，如果有的话
@@ -80,43 +80,39 @@ ln -s /home/hsit/alpaca/service-account.jar /etc/init.d/service-account
 # 到这里后台服务就算做好了
 ll /etc/init.d
 
-# 可以看到有一个链接指向
-
-# 使用普通用户连接到服务器，并在home目录下创建一个新的目录，用来放置jar文件
-cd ~
-mkdir alpaca
-
-# 接着开始安装服务实例jar文件
+# 可以看到有一个链接指向，即为成功创建
 
 ```
-
-安装步骤：
-chown hsit:hsit service-account-0.0.1-SNAPSHOT.jar
-chmod 500 service-account-0.0.1-SNAPSHOT.jar
-chattr +i service-account-0.0.1-SNAPSHOT.jar
 
 ## 服务实例
 ```
 # 使用普通用户连接到服务器
 sshpass -p hsit ssh hsit@192.168.2.75 -o StrictHostKeyChecking=no
 
-# 尝试停止旧服务
-/etc/init.d/alpaca/service-account stop
+# 尝试停止旧服务，如果有的话
+service service-account stope
 
-# 进入目录，设置文件名
-cd ~/alpaca
-NAME=service-account-0.0.1-SNAPSHOT
+# 进入目录，设置一个文件名称，之后的操作都需要这个临时变量
+cd /home/hsit/alpaca
+jarfile=service-account
 
 # 删除旧文件，如果有的话
 rm $NAME.jar
 
 # 从ftp复制新的服务
-wget ftp://hsftp:hsftp@10.188.180.99/jar/$NAME.jar
+wget ftp://hsftp:hsftp@10.188.180.99/jar/$jarfile.jar
+
+# 设置所有者与权限
+chown hsit:hsit $jarfile.jar
 
 # 启动服务
-/etc/init.d/alpaca/service-account start --spring.profiles.active=prod
+service $jarfile start
 
 ```
 
+> 一些安全相关的设置
+chown hsit:hsit service-account.jar
+chmod 500 service-account.jar
+chattr +i service-account.jar
 
 > 注意这里如果使用service service-account start 之类的会拿不到JAVA_HOME这些环境变量，需要使用$NAME.conf来配置服务参数。所以就不用这种方法了。
