@@ -64,40 +64,22 @@ WORKING_DIR="$(pwd)"
 把jar发布到你在服务器上的目录下。
 
 ## 服务安装步骤
-
-> 注意，第一次发布服务的时候需要进行如下配置：
-
 ```
 # 使用root用户登录服务器
 su root
 
-# 删除旧的软链接，如果有的话
-rm -rf /etc/init.d/service-account
-
-# 创建软链接，此时软链接的指向是无效的
-ln -s /home/hsit/alpaca/service-account.jar /etc/init.d/service-account
-
-# 到这里后台服务就算做好了
-ll /etc/init.d
-
-# 可以看到有一个链接指向，即为成功创建
-
-```
-
-## 服务实例
-```
-# 使用普通用户连接到服务器
-sshpass -p hsit ssh hsit@192.168.2.75 -o StrictHostKeyChecking=no
+# 设置一个临时变量，记录jar名，不带后缀名
+jarfile=service-account
 
 # 尝试停止旧服务，如果有的话
-service service-account stope
+service $jarfile stop
 
 # 进入目录，设置一个文件名称，之后的操作都需要这个临时变量
 cd /home/hsit/alpaca
-jarfile=service-account
+
 
 # 删除旧文件，如果有的话
-rm $NAME.jar
+rm $jarfile.jar
 
 # 从ftp复制新的服务
 wget ftp://hsftp:hsftp@10.188.180.99/jar/$jarfile.jar
@@ -105,6 +87,12 @@ wget ftp://hsftp:hsftp@10.188.180.99/jar/$jarfile.jar
 # 设置所有者与可执行权限
 chown hsit:hsit $jarfile.jar
 chmod 500 $jarfile.jar
+
+# 删除旧的软链接，如果有的话
+rm -rf /etc/init.d/service-account
+
+# 创建软链接，此时软链接的指向是无效的
+ln -s /home/hsit/alpaca/service-account.jar /etc/init.d/service-account
 
 # 启动服务
 service $jarfile start
