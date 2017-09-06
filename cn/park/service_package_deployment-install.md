@@ -68,7 +68,8 @@ WORKING_DIR="$(pwd)"
 # 使用root用户登录服务器
 su root
 
-# 设置一个临时变量，记录jar名，不带后缀名
+# 设置临时变量，服务home目录记录jar名，不带后缀名
+ALPACA_HOME=/home/hsit/alpaca
 jarfile=service-account
 
 # 尝试停止旧服务，如果有的话
@@ -79,7 +80,7 @@ cd /home/hsit/alpaca
 
 
 # 删除旧文件，如果有的话
-rm $jarfile.jar
+rm -rf $jarfile.jar
 
 # 从ftp复制新的服务
 wget ftp://hsftp:hsftp@10.188.180.99/jar/$jarfile.jar
@@ -92,7 +93,10 @@ chmod 500 $jarfile.jar
 rm -rf /etc/init.d/service-account
 
 # 创建软链接，此时软链接的指向是无效的
-ln -s /home/hsit/alpaca/service-account.jar /etc/init.d/service-account
+ln -s /home/hsit/alpaca/$jarfile.jar /etc/init.d/$jarfile
+
+# 在jar同目录下创建配置文件
+vi /home/hist/alpaca
 
 # 启动服务
 service $jarfile start
