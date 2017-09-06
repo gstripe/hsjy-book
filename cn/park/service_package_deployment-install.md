@@ -63,19 +63,24 @@ WORKING_DIR="$(pwd)"
 这样就有了一个集成了Shell脚本的可执行jar。
 把jar发布到你在服务器上的目录下。
 
-注意：第一次发布服务的时候需要进行如下配置：
+## 服务安装步骤
+
+> 注意，第一次发布服务的时候需要进行如下配置：
+
 ```
 # 使用root用户连接到服务器
 su root
 
-# 进入/etc/init.d 并创建 alpaca目录，此目录用来放置所有服务jar的软链接
-cd /etc/init.d
-mkdir alpaca
+# 删除旧的软链接，如果有的话
+rm -rf /etc/init.d/service-account
 
 # 创建软链接，此时软链接的指向是无效的
-ln -s /home/hsit/alpaca/service-account-0.0.1-SNAPSHOT.jar /etc/init.d/alpaca/service-account
+ln -s /home/hsit/alpaca/service-account.jar /etc/init.d/service-account
 
 # 到这里后台服务就算做好了
+ll /etc/init.d
+
+# 可以看到有一个链接指向
 
 # 使用普通用户连接到服务器，并在home目录下创建一个新的目录，用来放置jar文件
 cd ~
@@ -85,7 +90,9 @@ mkdir alpaca
 
 ```
 
+安装步骤：
 chown hsit:hsit service-account-0.0.1-SNAPSHOT.jar
+chmod 500 service-account-0.0.1-SNAPSHOT.jar
 chattr +i service-account-0.0.1-SNAPSHOT.jar
 
 ## 服务实例
@@ -110,5 +117,6 @@ wget ftp://hsftp:hsftp@10.188.180.99/jar/$NAME.jar
 /etc/init.d/alpaca/service-account start --spring.profiles.active=prod
 
 ```
+
 
 > 注意这里如果使用service service-account start 之类的会拿不到JAVA_HOME这些环境变量，需要使用$NAME.conf来配置服务参数。所以就不用这种方法了。
