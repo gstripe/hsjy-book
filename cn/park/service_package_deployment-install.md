@@ -4,6 +4,7 @@
 > https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#deployment-install
 > http://blog.didispace.com/spring-boot-run-backend/
 > http://blog.csdn.net/hengyunabc/article/details/51050219
+> http://www.cnblogs.com/lobo/p/5657684.html
 
 ## Centos6 下将服务安装为后台服务
 
@@ -67,7 +68,7 @@ WORKING_DIR="$(pwd)"
 # 使用root用户连接到服务器
 su root
 
-# 进入/etc/init.d 并创建 alpaca目录
+# 进入/etc/init.d 并创建 alpaca目录，此目录用来放置所有服务jar的软链接
 cd /etc/init.d
 mkdir alpaca
 
