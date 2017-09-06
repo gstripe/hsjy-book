@@ -82,7 +82,7 @@ cd $ALPACA_HOME
 rm -rf $SERVICE_NAME.jar
 
 # 从ftp复制新的服务
-wget ftp://hsftp:hsftp@10.188.180.99/jar/$jarfile.jar
+wget ftp://hsftp:hsftp@10.188.180.99/jar/$SERVICE_NAME.jar
 
 # 设置所有者与可执行权限
 chown hsit:hsit $SERVICE_NAME.jar
@@ -104,7 +104,7 @@ JAVA_OPTS=-Xmx128M
 RUN_ARGS=--spring.profiles.active=prod
 
 # 启动服务
-su -hsit -c 'service $SERVICE_NAME start'
+# su -hsit -c 'service $SERVICE_NAME start' 是不是这个可以做到自动启动里面去？
 # 或 hsit用户登录后执行
 service $SERVICE_NAME start
 
