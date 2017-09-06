@@ -106,12 +106,10 @@ RUN_ARGS=--spring.profiles.active=prod
 # 启动服务
 service $SERVICE_NAME start
 
-# 待测试 开机启动
-vi /etc/rc.local
-
-# 接着输入如下内容
-su -hsit -c 'service $SERVICE_NAME start'
-
+# 开机启动，添加、打开、关闭
+chkconfig --add $SERVICE_NAME
+chkconfig $SERVICE_NAME on
+chkconfig $SERVICE_NAME off
 ```
 
 > 一些安全相关的设置，可以放置服务程序被勿删除修改什么的
