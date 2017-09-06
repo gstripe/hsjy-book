@@ -102,8 +102,9 @@ rm $NAME.jar
 # 从ftp复制新的服务
 wget ftp://hsftp:hsftp@10.188.180.99/jar/$jarfile.jar
 
-# 设置所有者与权限
+# 设置所有者与可执行权限
 chown hsit:hsit $jarfile.jar
+chmod 500 $jarfile.jar
 
 # 启动服务
 service $jarfile start
@@ -115,4 +116,4 @@ chown hsit:hsit service-account.jar
 chmod 500 service-account.jar
 chattr +i service-account.jar
 
-> 注意这里如果使用service service-account start 之类的会拿不到JAVA_HOME这些环境变量，需要使用$NAME.conf来配置服务参数。所以就不用这种方法了。
+> 注意这里如果使用service service-account start 之类的会拿不到JAVA_HOME这些环境变量，需要使用$NAME.conf来配置服务参数。所以就不用这种方法了。c
