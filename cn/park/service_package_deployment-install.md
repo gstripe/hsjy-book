@@ -126,6 +126,7 @@ chkconfig --list
 > 配置文件存放地址 ftp://hsftp:hsftp@10.188.180.99/alpaca/conf/
 > 按照服务器ip存放，所以直接下载到对应的服务器就可以了
 
+
 > 一些安全相关的设置，可以放置服务程序被勿删除修改什么的
 chown hsit:hsit service-account.jar
 chmod 500 service-account.jar
