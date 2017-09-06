@@ -76,7 +76,7 @@ jarfile=service-account
 service $jarfile stop
 
 # 进入目录，设置一个文件名称，之后的操作都需要这个临时变量
-cd /home/hsit/alpaca
+cd $ALPACA_HOME
 
 
 # 删除旧文件，如果有的话
@@ -93,10 +93,16 @@ chmod 500 $jarfile.jar
 rm -rf /etc/init.d/service-account
 
 # 创建软链接，此时软链接的指向是无效的
-ln -s /home/hsit/alpaca/$jarfile.jar /etc/init.d/$jarfile
+ln -s $ALPACA_HOME/$jarfile.jar /etc/init.d/$jarfile
 
 # 在jar同目录下创建配置文件
-vi /home/hist/alpaca
+vi $ALPACA_HOME/$jarfile.conf
+
+# 接着输入如下内容：
+LOG_FOLDER=./log
+JAVA_HOME=/usr/local/jdk1.7.0_80
+JAVA_OPTS=-Xmx128M
+RUN_ARGS=--spring.profiles.active=prod
 
 # 启动服务
 service $jarfile start
