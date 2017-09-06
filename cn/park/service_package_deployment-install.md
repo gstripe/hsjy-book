@@ -124,7 +124,13 @@ chkconfig --list
 
 ## 一次性搞定配置文件
 > 配置文件存放地址 ftp://hsftp:hsftp@10.188.180.99/alpaca/conf/
-> 按照服务器ip存放，所以直接下载到对应的服务器就可以了
+> 文件按照服务器ip地址存放，所以直接下载到对应的服务器就可以了
+sshpass -p hsit ssh hsit@192.168.2.70 -o StrictHostKeyChecking=no
+cd ~/alpaca
+wget ftp://hsftp:hsftp@10.188.180.99/alpaca/conf/192.168.2.70/park-admin.conf
+wget ftp://hsftp:hsftp@10.188.180.99/alpaca/conf/192.168.2.70/park-gateway.conf
+wget ftp://hsftp:hsftp@10.188.180.99/alpaca/conf/192.168.2.70/park-turbine.conf
+wget ftp://hsftp:hsftp@10.188.180.99/alpaca/conf/192.168.2.70/park-zipkin-server.conf
 
 
 > 一些安全相关的设置，可以放置服务程序被勿删除修改什么的
