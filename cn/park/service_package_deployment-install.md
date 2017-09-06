@@ -70,42 +70,45 @@ su root
 
 # 设置临时变量，服务home目录记录jar名，不带后缀名
 ALPACA_HOME=/home/hsit/alpaca
-jarfile=service-account
+SERVICE_NAME=service-account
 
 # 尝试停止旧服务，如果有的话
-service $jarfile stop
+service $SERVICE_NAME stop
 
 # 进入目录，设置一个文件名称，之后的操作都需要这个临时变量
 cd $ALPACA_HOME
 
 
 # 删除旧文件，如果有的话
-rm -rf $jarfile.jar
+rm -rf $SERVICE_NAME.jar
 
 # 从ftp复制新的服务
 wget ftp://hsftp:hsftp@10.188.180.99/jar/$jarfile.jar
 
 # 设置所有者与可执行权限
-chown hsit:hsit $jarfile.jar
-chmod 500 $jarfile.jar
+chown hsit:hsit $SERVICE_NAME.jar
+chmod 500 $SERVICE_NAME.jar
 
 # 删除旧的软链接，如果有的话
-rm -rf /etc/init.d/service-account
+rm -rf /etc/init.d/$SERVICE_NAME
 
 # 创建软链接，此时软链接的指向是无效的
-ln -s $ALPACA_HOME/$jarfile.jar /etc/init.d/$jarfile
+ln -s $ALPACA_HOME/$SERVICE_NAME.jar /etc/init.d/$SERVICE_NAME
 
 # 在jar同目录下创建配置文件
-vi $ALPACA_HOME/$jarfile.conf
+vi $ALPACA_HOME/$SERVICE_NAME.conf
 
-# 接着输入如下内容：
+# 接着输入如下内容（此处配置除了RUN_ARGS外都保持默认）：
 LOG_FOLDER=./log
 JAVA_HOME=/usr/local/jdk1.7.0_80
 JAVA_OPTS=-Xmx128M
 RUN_ARGS=--spring.profiles.active=prod
 
 # 启动服务
-service $jarfile start
+su -hsit -c 'service $SERVICE_NAME start'
+# 或 hsit用户登录后执行
+service $SERVICE_NAME start
+
 
 ```
 
