@@ -116,4 +116,4 @@ chown hsit:hsit service-account.jar
 chmod 500 service-account.jar
 chattr +i service-account.jar
 
-> 注意这里如果使用service service-account start 之类的会拿不到JAVA_HOME这些环境变量，需要使用$NAME.conf来配置服务参数。所以就不用这种方法了。c
+> 注意这里如果使用service service-account start 之类的会拿不到JAVA_HOME这些环境变量，需要使用$NAME.conf来配置服务参数。
