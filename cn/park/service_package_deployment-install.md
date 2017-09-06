@@ -85,6 +85,9 @@ mkdir alpaca
 
 ```
 
+chown hsit:hsit service-account-0.0.1-SNAPSHOT.jar
+chattr +i service-account-0.0.1-SNAPSHOT.jar
+
 ## 服务实例
 ```
 # 使用普通用户连接到服务器
@@ -108,4 +111,4 @@ wget ftp://hsftp:hsftp@10.188.180.99/jar/$NAME.jar
 
 ```
 
-> 注意这里如果使用service service-account start 之类的会拿不到JAVA_HOME这些环境变量，所以就不用这种方法了
+> 注意这里如果使用service service-account start 之类的会拿不到JAVA_HOME这些环境变量，需要使用$NAME.conf来配置服务参数。所以就不用这种方法了。

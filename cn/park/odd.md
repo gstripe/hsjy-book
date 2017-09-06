@@ -67,3 +67,10 @@ getObject()返回实例的AOP代理
 该银行账户作为确定适应策略的因素。
 
 #### 模板模式
+
+
+/etc/rc.local
+su - hsit -c '/opt/apache-activemq-5.14.0/bin/activemq start'
+su - hsit -c '/opt/apache-tomcat-7.0.70/bin/startup.sh'
+su - hsit -c '/home/hsit/kafka/bin/kafka-server-start.sh -daemon /home/hsit/kafka/config/serve
+r.properties'
