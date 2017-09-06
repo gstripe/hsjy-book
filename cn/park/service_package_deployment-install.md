@@ -109,7 +109,6 @@ su -hsit -c 'service $SERVICE_NAME start'
 # 或 hsit用户登录后执行
 service $SERVICE_NAME start
 
-
 ```
 
 > 一些安全相关的设置
