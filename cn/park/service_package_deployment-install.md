@@ -78,7 +78,6 @@ service $SERVICE_NAME stop
 # 进入目录，设置一个文件名称，之后的操作都需要这个临时变量
 cd $ALPACA_HOME
 
-
 # 删除旧文件，如果有的话
 rm -rf $SERVICE_NAME.jar
 
