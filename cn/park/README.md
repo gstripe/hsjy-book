@@ -23,6 +23,8 @@
 > 监控聚合服务，聚合所有服务的监控信息，并通过Hystrix Dashboard进行显示
 * park-zipkin-server
 > 分布式服务跟踪，对服务的请求链路进行记录。
+* park-manager
+> 目前仅仅只是演示一个服务消费者调用service-account获得Account列表的分页表格功能（基于简单的Bootstrap样式）
 
 **alpaca-service工程说明**
 > 主要提供一个service-account的示例工程，里面主要包含对MyBatis的使用、如果将工程转成一个服务注册到注册中心。
