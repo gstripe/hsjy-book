@@ -24,7 +24,7 @@
 * park-zipkin-server
 > 分布式服务跟踪，对服务的请求链路进行记录。
 * park-manager
-> 目前仅仅只是演示一个服务消费者调用service-account获得Account列表的分页表格功能（基于简单的Bootstrap样式与模板引擎Thymeleaf）
+> 目前仅仅只是做了一个服务消费者调用service-account获得Account列表的分页表格功能（基于简单的Bootstrap样式与模板引擎Thymeleaf）
 
 **alpaca-service工程说明**
 > 主要提供一个service-account的示例工程，里面主要包含对MyBatis的使用、如果将工程转成一个服务注册到注册中心。
