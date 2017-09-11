@@ -1,6 +1,6 @@
 # 目前完成的内容一览表
 
-**内部SVN服务器提交项目工程** 
+**内部SVN服务器提交的项目工程** 
 * alpaca-park
 > park主要工程，包含注册中心、配置中心、Spring Boot Admin Server、Turbine（监控聚合服务）、Zipkin Server（服务跟踪相关）等主要功能
 * alpaca-service
