@@ -10,4 +10,3 @@
 * [alpaca-service-archetype](https://github.com/gstripe/alpaca-service-archetype.git)
 > 生成服务工程的原型工具
 
-ddd
