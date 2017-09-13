@@ -77,4 +77,5 @@
       ![image](/cn/park/images/project_info.png)
 
 
+> _注：不再生成*Mapper.java与*Mapper.xml，仅仅生成单表实体类。_
 
