@@ -34,7 +34,13 @@
     <version>2.4</version>
     <classifier>jdk15</classifier>
 </dependency>
+<dependency>
+  <groupId>org.apache.httpcomponents</groupId>
+  <artifactId>httpclient</artifactId>
+  <version>4.5.3</version>
+</dependency>
 ```
+> 其他如commons-lang3、commons-collections没有的话自行引入
 
 * 应用主入口配置注解
 
