@@ -38,6 +38,7 @@
 
 * 应用主入口配置注解
 
+> 导入自动配置类EulerSessionFilterConfiguration.class
 
 ```
 @SpringBootApplication
@@ -51,6 +52,22 @@ public class ManagerApplication {
     }
 
 }
+```
+> 注意，目前EulerSessionFilter尚未实现实际的业务代码，仅仅返回一个LocalSession
+
+* application.yml配置
+
+
+```
+# 开启集成平台的SSO过滤器
+park.euler.sso.enabled: true
+# 需要进行过滤的地址，默认值：/*
+park.euler.sso.filter-url: /manager/*
+# 过滤器排序 默认值：1
+park.euler.sso.order: 1
+# 不经过过滤器的内容
+# 默认值：*.css,*.js,*.html,*.eot,*.svg,*.woff,*.woff2,*.png,*.gif,*.jpg,*.jpeg
+# park.euler.sso.exclude-urls:
 ```
 
 
