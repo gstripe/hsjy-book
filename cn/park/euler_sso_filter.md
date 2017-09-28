@@ -1,6 +1,6 @@
 # 集成平台单点登录整合
 
-* 相关依赖包
+* 导入相关依赖包
 
 
 ```
@@ -35,4 +35,22 @@
     <classifier>jdk15</classifier>
 </dependency>
 ```
+
+* 应用主入口配置注解
+
+
+```
+@SpringBootApplication
+@ImportAutoConfiguration(value = {
+    EulerSessionFilterConfiguration.class
+})
+public class ManagerApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(ManagerApplication.class, args);
+    }
+
+}
+```
+
 
