@@ -11,7 +11,7 @@
 </dependency>
 <!-- 集成平台 SSO 需要用到的 依赖包-->
 <!-- sysd-euler重新编译版 -->
-<!-- 里面增加LocalSession实现序列化接口与默认构造函数 -->
+<!-- 增加LocalSession实现序列化接口与默认构造函数 -->
 <dependency>
     <groupId>com.icsshs</groupId>
     <artifactId>sysd-euler</artifactId>
