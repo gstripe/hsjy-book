@@ -18,7 +18,7 @@
 > ParkErrorAttributes为我们自定义内容格式，直接复制DefaultErrorAttributes进行修改。
 > 修改内容目前为：
 >  * 修改errors的格式，这里获取比较简单的错误信息即可 比如 字段名 跟错误提示信息 与错误内容：{ "field" : "divisor", "value" : "1.0", "message" : ""  }
-   * 添加Sleuth的跟踪相关id内容（如果有引入sleuth包，并开启跟踪功能。）
+>   * 添加Sleuth的跟踪相关id内容（如果有引入sleuth包，并开启跟踪功能。）
 
 ```
 @SpringBootApplication
