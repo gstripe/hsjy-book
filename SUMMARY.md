@@ -28,4 +28,4 @@
     
     * [集成平台单点登录整合](cn/park/euler_sso_filter.md)
     
-    * [统一异常信息定义](cn/park/spring_session_redis.md)
+    * [统一异常信息定义](cn/park/park_error_mvc_onfiguration.md)
