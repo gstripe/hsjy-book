@@ -44,16 +44,6 @@ public class ManagerApplication {
 
 
 ```
-# 开启集成平台的SSO过滤器
-park.euler.sso.enabled: true
-# 需要进行过滤的地址，默认值：/*
-park.euler.sso.filter-url: /manager/*
-# 过滤器排序 默认值：1
-park.euler.sso.order: 1
-# 不经过过滤器的内容
-# 默认值：*.css,*.js,*.html,*.eot,*.svg,*.woff,*.woff2,*.png,*.gif,*.jpg,*.jpeg
-# park.euler.sso.exclude-urls:
-
 park:
   euler:
     sso:
@@ -61,8 +51,9 @@ park:
       order: 1 # 过滤器排序 默认值：1
       filter-url: /manager/* # 需要进行过滤的地址，默认值：/
       exclude-urls: *.css,*.js,*.html,*.eot,*.svg,*.woff,*.woff2,*.png,*.gif,*.jpg,*.jpeg # 不经过过滤器的内容
-      server: http://192.168.2.119:9080/main # 配置集成平台的单点登录地址，一般情况下会从集成平台携带过来，如果进行配置则使用配置的内容，例如使用在nginx环境下
-
+      server: http://192.168.2.119:9080/main
 ```
 
+> 其他配置说明：
+> .server 配置集成平台的单点登录地址，一般情况下会从集成平台携带过来，如果进行配置则使用配置的内容，例如使用在nginx环境下
 
