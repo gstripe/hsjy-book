@@ -37,7 +37,7 @@ spring:
 park:
   session:
     redis:
-     style: park
+     style: park # park风格，使用json来进行序列化，建议使用。如果不使用直接写none，将会使用jdk序列方式
     strategy: cookie #会话策略 提供两个值 header、cookie
 
 ```
