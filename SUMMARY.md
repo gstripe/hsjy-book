@@ -30,4 +30,4 @@
     
     * [统一异常信息定义](cn/park/park_error_mvc_onfiguration.md)
     
-    * [基于Redis的Spring Session](/cn/park/spring_session_redis.md)
+    * [使用Redis存储会话](/cn/park/spring_session_redis.md)
