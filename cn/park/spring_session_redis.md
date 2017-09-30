@@ -42,13 +42,31 @@ park:
 
 ```
 
-> 注意：spring.redis.* 还有其他配置，比如配置pool相关参数，这里使用默认参数
-> park.session.strategy 
+> 注意：
+> spring.redis.* 还有其他配置，比如配置pool相关参数，这里使用默认参数
+> park.session.strategy:
 > 1. header 会话ID存在请求头中；请求头名称默认为： x-auth-token，可以通过park.session.header.name自定义
 > 2. cookie 会话id存放在浏览器cookie中；Cookie名称默认为： SESSIONID，可以通过park.session.cookie.name自定义
 
 
+* 代码编写
 
+
+```
+@SpringBootApplication
+@ImportAutoConfiguration(value = {
+        ParkRedisSessionConfiguration.class
+})
+public class ManagerApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(ManagerApplication.class, args);
+    }
+
+}
+```
+
+> 特别注意：基于cookie的会话，如果想要会话共享，那么就需要使用nginx来进行反向代理，让cookie保持在同域下。
 
 
 
