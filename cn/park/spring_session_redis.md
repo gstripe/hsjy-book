@@ -1,4 +1,4 @@
-# 基于Redis的Spring Session
+# 使用Redis存储会话
 
 > 基于Spring Session组件，并使用redis进行会话的存储
 
