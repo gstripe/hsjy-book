@@ -21,13 +21,17 @@
 * 使用
     
     * [Maven 使用](cn/usage/useage_maven.md)
+    
+* Alpaca Park Starter
+
+    * [park-starter](cn/park/park-starter.md)
 
 * Alpaca Park
     
     * [从archetype创建服务工程](cn/park/new_service_project_from_archetype.md)
     
-    * [集成平台单点登录整合](cn/park/euler_sso_filter.md)
+    * [集成平台单点登录整合](/cn/park/park-starter-sso-euler.md)
     
-    * [统一异常信息定义](cn/park/park_error_mvc_onfiguration.md)
+    * [统一异常信息定义](/cn/park/park-starter-error-attributes.md)
     
-    * [使用Redis存储会话](/cn/park/spring_session_redis.md)
+    * [使用Redis存储会话](/cn/park/park-starter-redis-http-session.md)
