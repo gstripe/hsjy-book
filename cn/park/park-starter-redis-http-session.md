@@ -33,10 +33,12 @@ park:
 > 配置项注意事项
 
 spring.redis.\* 还有其他配置，比如配置pool相关参数，这里使用默认参数
-park.session.strategy:
-1. header 会话ID存在请求头中；请求头名称默认为： x-auth-token，可以通过park.session.header.name自定义
-2. cookie 会话id存放在浏览器cookie中；Cookie名称默认为： SESSIONID，可以通过park.session.cookie.name自定义
 
+park.session.strategy:
+
+1. header 会话ID存在请求头中；请求头名称默认为： x-auth-token，可以通过park.session.header.name自定义
+
+2. cookie 会话id存放在浏览器cookie中；Cookie名称默认为： SESSIONID，可以通过park.session.cookie.name自定义
 
 > 开启配置
 
