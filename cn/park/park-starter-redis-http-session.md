@@ -27,7 +27,7 @@ park:
     redis:
      style: park # park风格，使用json来进行序列化，建议使用。如果不使用直接写none，将会使用jdk序列方式
     strategy: cookie #会话策略 提供两个值 header、cookie
-park.session.max-inactive-interval-in-seconds: 3600 #单位:秒
+    max-inactive-interval-in-seconds: 3600 #最大不活跃的时间间隔(以秒为单位)
 ```
 
 > 配置项注意事项
@@ -53,8 +53,6 @@ public class DemoApplication {
     }
 }
 ```
-
-
 
 
 
