@@ -1,6 +1,6 @@
 # 从archetype创建服务工程
 
-**_这个不使用了仅供参考_**
+**_特别注意:这个不使用了,仅供参考_**
 
 ## 配置alpaca-service-archetype的Maven坐标
 
