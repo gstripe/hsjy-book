@@ -1,5 +1,7 @@
 # 从archetype创建服务工程
 
+**_这个不使用了仅供参考_**
+
 ## 配置alpaca-service-archetype的Maven坐标
 
 * ### IntelliJ IDEA
@@ -11,15 +13,16 @@
   3. 点击Add Archetype...按钮
 
   4. 在输入框输入对应的坐标
- ```
- <dependency>
- <groupId>alpaca.service</groupId>
- <artifactId>alpaca-service-archetype</artifactId>
- <version>0.0.1-RELEASE</version>
- </dependency>
- ```
 
-  5. 点击OK，如图所示说明archetype添加成功
+     ```
+     <dependency>
+     <groupId>alpaca.service</groupId>
+     <artifactId>alpaca-service-archetype</artifactId>
+     <version>0.0.1-RELEASE</version>
+     </dependency>
+     ```
+
+  5. 点击OK，如图所示说明archetype添加成功  
      ![image](/cn/park/images/new_project_maven_add_archetype.png)
 * ### Spring Tool Suite
 
@@ -76,6 +79,7 @@
 
       ![image](/cn/park/images/project_info.png)
 
+> _注：不再生成Mapper.java与Mapper.xml，仅仅生成单表实体类。_
 
-> _注：不再生成*Mapper.java与*Mapper.xml，仅仅生成单表实体类。_
+
 
