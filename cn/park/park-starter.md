@@ -5,6 +5,9 @@
 一些可配置的功能提取到这里。  
 目前没有RELEASE版本，请到版本库中获取alpaca-park工程到本地使用。
 
+当前park-starter 版本为0.0.3-SNAPSHOT
+
+
 > 参考工程
 
 park-manager
@@ -26,4 +29,5 @@ park-gateway
 > Zuul Filter
 
 [park-starter-zuul-filter](/cn/park/park-starter-zuul-filter.md)
+
 

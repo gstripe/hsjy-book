@@ -1,9 +1,8 @@
-# 集成平台单点登录整合(旧）
+# 集成平台单点登录整合\(旧）
 
 * 与 Spring Boot 工程整合
 
 * 导入相关依赖包
-
 
 ```
 <dependency>
@@ -38,10 +37,10 @@ public class ManagerApplication {
 
 }
 ```
+
 > 注意，目前EulerSessionFilter尚未实现实际的业务代码，仅仅返回一个LocalSession
 
 * application.yml配置
-
 
 ```
 park:
@@ -54,6 +53,8 @@ park:
       server: http://192.168.2.119:9080/main
 ```
 
-> 其他配置说明：
-> .server 配置集成平台的单点登录地址，通常是从直接从集成平台的_ssoServer携带过来，如果进行配置则使用配置的内容，例如使用在nginx环境下
+> 其他配置说明：  
+> .server 配置集成平台的单点登录地址，通常是从直接从集成平台的\_ssoServer携带过来，如果进行配置则使用配置的内容，例如使用在nginx环境下
+
+
 
