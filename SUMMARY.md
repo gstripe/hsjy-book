@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* 安装
+* [安装](an-zhuang.md)
   * [jdk安装](/cn/install/install_jdk.md)
   * [Maven安装配置](cn/install/install_maven.md)
   * [zookeeper集群安装配置](cn/install/install_zookeeper.md)
